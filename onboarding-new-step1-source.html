@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html id='hired' class='no-js candidates-onboarding-job-infos-controller candidates-onboarding-job-infos-controller-show-action'>
+<head>
+<script type="text/javascript">var _rollbarConfig = {"accessToken":"8d4a53377d3142c48016a34d3506bc33","captureUncaught":true,"ignoredMessages":["Error calling method on NPObject.","QuotaExceededError: DOM Exception 22","QuotaExceededError: DOM Exception 22: An attempt was made to add something to storage that exceeded the quota."],"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"production-20170227182038","guess_uncaught_frames":true}}}};</script>
+<script type="text/javascript">!function(r){function e(t){if(o[t])return o[t].exports;var n=o[t]={exports:{},id:t,loaded:!1};return r[t].call(n.exports,n,n.exports,e),n.loaded=!0,n.exports}var o={};return e.m=r,e.c=o,e.p="",e(0)}([function(r,e,o){"use strict";var t=o(1).Rollbar,n=o(2);_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://d37gvrvc0wt4s1.cloudfront.net/js/v1.9/rollbar.min.js";var a=t.init(window,_rollbarConfig),i=n(a,_rollbarConfig);a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,i)},function(r,e){"use strict";function o(r){return function(){try{return r.apply(this,arguments)}catch(e){try{console.error("[Rollbar]: Internal error",e)}catch(o){}}}}function t(r,e,o){window._rollbarWrappedError&&(o[4]||(o[4]=window._rollbarWrappedError),o[5]||(o[5]=window._rollbarWrappedError._rollbarContext),window._rollbarWrappedError=null),r.uncaughtError.apply(r,o),e&&e.apply(window,o)}function n(r){var e=function(){var e=Array.prototype.slice.call(arguments,0);t(r,r._rollbarOldOnError,e)};return e.belongsToShim=!0,e}function a(r){this.shimId=++c,this.notifier=null,this.parentShim=r,this._rollbarOldOnError=null}function i(r){var e=a;return o(function(){if(this.notifier)return this.notifier[r].apply(this.notifier,arguments);var o=this,t="scope"===r;t&&(o=new e(this));var n=Array.prototype.slice.call(arguments,0),a={shim:o,method:r,args:n,ts:new Date};return window._rollbarShimQueue.push(a),t?o:void 0})}function l(r,e){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){var o=e.addEventListener;e.addEventListener=function(e,t,n){o.call(this,e,r.wrap(t),n)};var t=e.removeEventListener;e.removeEventListener=function(r,e,o){t.call(this,r,e&&e._wrapped?e._wrapped:e,o)}}}var c=0;a.init=function(r,e){var t=e.globalAlias||"Rollbar";if("object"==typeof r[t])return r[t];r._rollbarShimQueue=[],r._rollbarWrappedError=null,e=e||{};var i=new a;return o(function(){if(i.configure(e),e.captureUncaught){i._rollbarOldOnError=r.onerror,r.onerror=n(i);var o,a,c="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(o=0;o<c.length;++o)a=c[o],r[a]&&r[a].prototype&&l(i,r[a].prototype)}return e.captureUnhandledRejections&&(i._unhandledRejectionHandler=function(r){var e=r.reason,o=r.promise,t=r.detail;!e&&t&&(e=t.reason,o=t.promise),i.unhandledRejection(e,o)},r.addEventListener("unhandledrejection",i._unhandledRejectionHandler)),r[t]=i,i})()},a.prototype.loadFull=function(r,e,t,n,a){var i=function(){var e;if(void 0===r._rollbarPayloadQueue){var o,t,n,i;for(e=new Error("rollbar.js did not load");o=r._rollbarShimQueue.shift();)for(n=o.args,i=0;i<n.length;++i)if(t=n[i],"function"==typeof t){t(e);break}}"function"==typeof a&&a(e)},l=!1,c=e.createElement("script"),d=e.getElementsByTagName("script")[0],p=d.parentNode;c.crossOrigin="",c.src=n.rollbarJsUrl,c.async=!t,c.onload=c.onreadystatechange=o(function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){c.onload=c.onreadystatechange=null;try{p.removeChild(c)}catch(r){}l=!0,i()}}),p.insertBefore(c,d)},a.prototype.wrap=function(r,e){try{var o;if(o="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._wrapped){r._wrapped=function(){try{return r.apply(this,arguments)}catch(e){throw e._rollbarContext=o()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e,e}},r._wrapped._isWrap=!0;for(var t in r)r.hasOwnProperty(t)&&(r._wrapped[t]=r[t])}return r._wrapped}catch(n){return r}};for(var d="log,debug,info,warn,warning,error,critical,global,configure,scope,uncaughtError,unhandledRejection".split(","),p=0;p<d.length;++p)a.prototype[d[p]]=i(d[p]);r.exports={Rollbar:a,_rollbarWindowOnError:t}},function(r,e){"use strict";r.exports=function(r,e){return function(o){if(!o&&!window._rollbarInitialized){var t=window.RollbarNotifier,n=e||{},a=n.globalAlias||"Rollbar",i=window.Rollbar.init(n,r);i._processShimQueue(window._rollbarShimQueue||[]),window[a]=i,window._rollbarInitialized=!0,t.processPayloads()}}}}]);</script>
+<title>Job Preferences - Hired</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="WetRG/3ndHd1yUJA/F3x+3w72JharXWCl0SdMevuT6XT29Vq3UAmIjsCF/Ql6t+Fmi/XH3oI62iQ6/u/jLbzZg==" />
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-f8bba6617971bf8553966d715a950b9b12988ec72984a3c3453c404cda6f2377.ico" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script>
+  window.jQuery || document.write('<script src="/assets/jquery2-25ca496239ae8641a09627c8aace5863e7676e465fbb4ce81bc7eb78c4d15627.js"><\/script>')
+</script>
+
+<script>
+  window.__HIRED_CONFIG__ = {"controller":"Candidates.Onboarding.JobInfos","action":"Show","bootstrap":{"require_cookie_consent":false,"branch_key":"key_live_ifrhqGHa26YCdebkNZny0pfdEwnP6L3G","suggest_places_path":"/api/places/suggest","normalize_places_path":"/api/places/normalize","skills_path":"/api/skills","allow_additional":false},"post_sign_in":true,"rails_env":"production","orig_request_uuid":"bc6ffbf6-10d4-41fd-abc1-a50e4a648bf4","domains":["hired.com","hired.co.uk","hired.ca","hired.com.au","hired.com.sg","fr.hired.com"],"vendor":{"filepicker":{"load":false,"apiKey":"A43ciXkN1QQey1MayglyUz"},"segment":{"current_user_id":1665123,"user_properties":{"email":"dustin@seogator.com","type":"Candidate","created_at":1488285757,"market_name":"Other","approved":false,"curation_status":"signed_up","rejection_reason":null,"utm_source":"organic","utm_campaign":null,"utm_medium":null,"utm_term":null,"utm_content":null,"utm_location":null,"locale":"en-US","language":"en","ivr_count":0,"user_id":1665123,"vertical":null,"role":null,"will_relocate":false,"currently_live":false,"desired_job_types":null,"onboarding_step":"job_info","batch_start_date":0,"desired_markets":"","desired_roles":""},"segment_options":{"integrations":{"Intercom":{"user_hash":"47f9283ef6f93ff256fa9ff668f748c3c1c441756b48a6de201137f959adf887"}}}}}};
+</script>
+<script>
+  window.I18n || (window.I18n = {});
+  window.I18n.defaultLocale = "en-US";
+  window.I18n.locale = "en-US";
+  window.I18n.extend = window.jQuery.prototype.extend;
+  I18n.translations || (I18n.translations = {});
+I18n.translations["en-US"] = I18n.extend((I18n.translations["en-US"] || {}), {"js":{"ajax_then_reload":{"generic_error":"The requested action could not be completed."},"ats_job_typeahead":{"loading":"Loading Jobs..."},"availability_calendar":{"auto_saved":"Changes saved automatically","change_tz":"Times below are listed in %{zone}. To change your local time zone, go to\n<a href='/profile/personal_info?user_return_to=%2Fcalendar'>your profile</a>\n","display":"Display","formats":{"calendar":{"day_name":"ddd","day_of_month":"DD"},"time_range_date":"hA z","time_slot":"h:mmA","week_start_end":"MMMM DD"},"note":"Note:","to":"to"},"candidates_search":{"any":"Any","clear":"Clear","error":"Error","filters":{"address":"Location","allow_relocation":"Relocation","allow_remote":"Remote","doesnt_require_sponsorship":"Doesn’t require sponsorship","dont_show_relocation":"Don't show relocation candidates","experience":"Experience","job_type":"Job type","miscellaneous":"Miscellaneous","more":"More","new_this_week":"New this week","offices":"Offices","or_uppercase":"OR","role":"Role","roles":"Roles","us_dod":"US DOD Clearance","years":"Years"},"forms":{"keywords":"Keywords"},"include_filters":"Include:","invalid_search":"Please fill in your location or role to get started","keywords":{"instructions":"You can use advanced search operators: AND, OR, the minus sign (to exclude a term), and parentheses to group searches.","placeholder":"e.g., Ruby, Python","title":"Keywords and Skills"},"location":{"placeholder":"e.g., San Francisco, CA","title":"Where are you looking to hire?"},"positions":{"add_description":"Add your open position to Hired to organize your search, get the best candidates in your inbox, collaborate with coworkers, and integrate with your ATS.","add_position":"Add New Position","archive":"Close Position","archive_confirm":"Are you sure you want to close this position?","create_title":"Save this search as a position","edit":"Edit Position","home":"Home","join":"Join Position","labels":{"ats_position":"%{ats_system} Position","connect_later":"Connect Later","connect_to_ats":"Connect to %{ats_name}","hiring_team":"Hiring Team","loading_jobs":"Loading Jobs","location":"Location","no_jobs_available":"No Jobs Available","role":"Role","select_one":"Select One","title":"Name your position"},"leave":"Leave Position","no_positions":"You haven't created or joined any Positions yet.","other_positions":"Find other positions","placeholders":{"location":"e.g. San Francisco, CA","role":"e.g. Full Stack Engineer","title":"e.g. Sr. Mobile Engineer"},"position":"Position","preview":"preview","save":"Save Position","save_as":"Save as Position","settings":"Settings","update_title":"Update position:","your_positions":"Your Positions"},"refine":"Refine","refine_filters":"Refine:","role":{"placeholder":"e.g., Full Stack Engineer","title":"Which role are you looking for?"},"save_new_search":"Save New Search","save_search":"Save Search","save_search_modal":{"header":"Get Notified About New Candidates","introduction":"Save your search to quickly bring up the most relevant candidates each time you log in. We'll make sure you see great candidate recommendations each week in your Monday morning email.","loading":"Saving...","name_your_search":"Name your search","save":"Save","save_search":"Save Search"},"saved_search":{"any_location":"Any Location","confirm_delete":"Are you sure you want to delete this search?","confirm_update":"Are you sure you want to update this search?","new_search":"New Search","save_changes":"Save Changes"},"saved_searches":"Saved Searches","search":"Search","search_already_saved":"Your search is already saved","search_invalid_for_saving":"Fill in your location and role in order to save your search","select_filters":"Select filters from the menu to narrow your search"},"cookie_warning":{"text":"We use cookies to improve your browsing experience as they enable us to remember log-in details, improve security, collect statistics, optimize site functionality and deliver content tailored to your interests. By continuing your navigation on this website, you are consenting to our use of such cookies or other plotters per our <a href='https://www.hired.com/privacy' target='_blank'>Privacy Policy</a>."},"coworker_inline_updates":{"error":"Error","saved":"Saved","saving":"Saving..."},"date_picker":{"clear":"Clear","close":"Close","days_full":{"day1":"Sunday","day2":"Monday","day3":"Tuesday","day4":"Wednesday","day5":"Thursday","day6":"Friday","day7":"Saturday"},"days_short":{"day1":"Sun","day2":"Mon","day3":"Tue","day4":"Wed","day5":"Thu","day6":"Fri","day7":"Sat"},"format":"d mmmm, yyyy","months_full":{"month1":"January","month10":"October","month11":"November","month12":"December","month2":"February","month3":"March","month4":"April","month5":"May","month6":"June","month7":"July","month8":"August","month9":"September"},"months_short":{"month1":"Jan","month10":"Oct","month11":"Nov","month12":"Dec","month2":"Feb","month3":"Mar","month4":"Apr","month5":"May","month6":"Jun","month7":"Jul","month8":"Aug","month9":"Sep"},"next_month":"Next Month","prev_month":"Previous Month","select_month":"Select a month","select_year":"Select a year","today":"Today"},"desired_headline":{"characters_remaining":{"one":"%{count} character remaining","other":"%{count} characters remaining"}},"list_header":{"backup_search":{"error":"No matches found including \"%{keywords}\".","results":{"one":"Showing one match without keywords.","other":"Showing %{start}–%{finish} of %{count} matches without keywords.","zero":"Please try different filters or search terms."}},"bookmarked":{"by_company":{"one":"One Bookmarked Candidate","other":"%{count} Bookmarked Candidates","zero":"No Bookmarked Candidates"},"by_you":{"one":"One Candidate Bookmarked By You","other":"%{count} Candidates Bookmarked By You","zero":"No Candidates Bookmarked By You"}},"hidden_header":{"one":"One Passed Candidate","other":"%{count} Passed Candidates","zero":"No Passed Candidates"},"just_for_you_header":{"help_text":"These are candidates your Account Executive has selected for you.\n","one":"One Candidate Just For You","other":"%{count} Candidates For You","zero":"No Candidates Just For You"},"matches_header":{"one":"Showing one match","other":"Showing %{start}–%{finish} of %{count} matches","zero":"No matches found. Please try different filters or search terms."},"results_header":{"one":"One result found for %{keywords}","other":"%{start}–%{finish} of %{count} results found for %{keywords}","zero":"No results found for %{keywords}"}},"list_page_intro":{"done":"Done","next":"Next →","scenes":{"intro":{"keyword_search":{"body":"Enter skills or additional keywords to narrow your results.  Try Boolean search for greater control.","body_html":"Scan a candidate's profile for particular skills and keywords. You can use simple keyword or Boolean Search.\n\nBoolean Search supports <b>AND</b>, <b>OR</b>, the <b>minus sign</b>, and <b>parentheses</b> to group searches.\n","headline":"Narrow your search"},"location":{"body":"We will show you candidates who want to work in your area.","headline":"Tell us where your office is located"},"new_this_week":{"body":"Log on every Monday to reach out to the latest qualified candidates.","headline":"New candidates are added every week"},"next_steps":{"body":"Browse profile summaries and click on a candidate’s profile to see more information. If you like what you see, reach out with a non-binding interview request to start the conversation.\nHave questions? Contact your Account Manager.\n","headline":"Check out candidates."},"roles":{"body":"You can select a specific role or browse by category (like Software Engineering).","headline":"Let us know what role you're hiring for"},"saved_search":{"body":"Save your searches for easy access later. You can edit and delete as necessary!\nWe'll send you candidate recommendations based upon your Saved Searches each week.\n","headline":"Save a search for each open role"},"search":{"body":"Be sure to include a role or location in each search you make, so we can introduce you to the most relevant candidates.","headline":"Find talent"},"welcome":{"body":"Our candidates are pre-vetted and ready to start interviewing today.\nLog in each Monday to connect with fresh talent.\n","headline":"Welcome to Hired!"}},"intro_beta":{"conclusion":{"body":"We will continue to send you new candidates that match your hiring needs each week.  Enjoy the new Hired.","headline":"Happy hiring!"},"location":{"body":"You can now search for the exact location where you are looking to hire using type ahead search.","headline":"Enter the exact location."},"role":{"body":"Search for one open role at a time to find the most relevant candidates. Either select from our suggested roles or enter the job you’re looking for. To search for more than one role at the same time, type each role comma separated.","headline":"Specify each open role."},"save_search":{"body":"Save your search criteria to easily access it later and receive the best matches each week.  You can edit and delete saved searches as your hiring needs change.","headline":"Save a search for each open role."},"skills":{"body":"Enter skills or additional keywords to narrow your results.  Try Boolean search for greater control.","headline":"Refine your search."},"welcome":{"body":"We’ve updated our search functionality and algorithms to make it easier for you to find the right candidates.\n","headline":"We've made changes to Hired!"}},"positions_details":{"hiring_team":{"body":"Tag your team members to collaborate on sourcing for this position","headline":"Add your hiring team"},"name_position":{"body":"Give a short descriptive name. This will be shown to candidates in your interview requests and discoverable for other team members on Hired","headline":"Name your position"},"save_button":{"body":"Saving will notify your hiring team members and make this position part of their Hired experience","headline":"Save and share your position"}},"positions_open_modal":{"open_modal":{"body":"When you're happy with the matches you're receiving, click 'Save as Position' to create one","headline":"Save your position"}},"positions_sidebar":{"feedback":{"body":"We hope you like this new experience in Hired but if you have any feedback or issues to report, feel free to reach out at <a href='mailto:research@hired.com'>research@hired.com</a>","headline":"Enjoy and Happy Hiring!"},"refinements":{"body":"Add skills, years of experience or other attributes to help us recommend even better matches to you. Note: Adding attributes here are just for you! It won't change what other hiring team members are seeing","headline":"Refine your position"},"settings":{"body":"If you're looking to make changes to the position, want to leave the hiring team or close the position entirely, visit the 'Settings' menu","headline":"Modify your position"},"side_bar":{"body_html":"Navigate between your open positions on the left to see a list of matches for each. If you want to find other open positions at your company, use the search box below\n","headline":"Congratulations!  You've created your first position"}},"positions_welcome":{"search_bar":{"body":"To create a new position, start by telling us where you're looking to hire, and who you're looking for","headline":"Start searching for candidates"},"start":{"body":"Introducing <b>Positions</b>: a new way to organize and manage the open roles you are sourcing for on Hired. This new experience will create a custom talent pipeline for each position, allow you integrate more deeply with your ATS and collaborate on sourcing with your hiring team!\n","headline":"Welcome to a new beta experience with Hired\n"}},"reapproval":{"failure":{"expired_token":{"body":"It looks like you might be using an old link. Please contact me at <a href='mailto:%{am_email}'>%{am_email}</a> for a new one!<br/><br/>- %{am_first_name}","button":"Got it!","headline":"Oops! This link is expired."},"invalid_token":{"body":"It looks like the link you're using is invalid. Please contact me at <a href='mailto:%{am_email}'>%{am_email}</a> for a new one!<br/><br/>- %{am_first_name}","button":"Got it!","headline":"Oops! We are unable to reactivate your account."}},"reapproved":{"body":"We're so excited to help you find your next best developer, product manager, designer, and data scientist. If you have any questions, please feel free to reach out to me at <a href='mailto:%{am_email}'>%{am_email}</a>. Happy hiring!<br/><br/>- %{am_first_name}","button":"Start Sourcing","headline":"Welcome back to Hired, %{first_name}"}},"update_saved_search":{"body":"Want better recommendations and matching from Hired? Update your saved searches to tell us the different roles you're looking for.\n","headline":"Update your Saved Search"}}},"place_chooser":{"placeholder":"Office Address or City"},"place_selections":{"add_location":"Another City","placeholder":"Type in a city…","preferred_location":"Preferred City","unserved":"We don’t currently have opportunities in:","unserved_notify":"We’ll email you when we have availability."},"profile_page_intro":{"done":"Done","next":"Next →","steps":{"base_salary":{"body":"Candidates will also see the info and perks you list on your Company Profile; it's not all about salary.\n","headline":"Salaries are Non-Binding"},"bookmark":{"body":"Your colleagues can also see who you've bookmarked.","headline":"Bookmark to Come Back Later"},"mentions":{"body":"@mention your colleagues in a note and they will be notified with an email.","headline":"Collaborate with Private Notes"},"pass":{"body":"This will hide the candidate from your searches (not your colleagues').","headline":"Not Interested? Pass."},"questions":{"body":"Ask an anonymous question before committing to a phone screen.","headline":"On the Fence?"},"visa":{"body":"See if a Candidate will require a sponsorship to work in your country.\n\nIf you don't see anything here, they may require visa sponsorship.\n","headline":"Work Status"},"welcome":{"body":"Candidates work with their dedicated Talent Advocate to create an up-to-date profile.","headline":"Welcome to the Profile"}}},"read_more":{"read_more":"Read More","show_less":"Show Less"},"request_ivr":{"revise_time":"%{time_left} min to revise your request"},"role_chooser":{"placeholder":"e.g., Full Stack Engineer"},"skills_chooser":{"add_button":"Add","add_skill":"Add a skill…","candidate":{"additional_skills":"Additional Skills","help_text":"Skills will be added here. At least one is required.","top_skills":"Your Top Skills"},"drag_instructions":"Drag and drop to re-order with top skills","employer":{"additional_skills":"Nice-to-Haves:","help_text":"Skills will be added here.","top_skills":"Top 5 Most Important Skills:"},"max_selected":"You have selected your top 5 skills; you can add additional skills later","suggested_skills":"Suggested skills:"},"typeahead":{"back":"BACK"},"web_push":{"unsupported_browser":"Unfortunately, your browser doesn't support push notifications."}}});
+
+</script>
+
+<script src="//cdn.optimizely.com/js/5414328115134464.js" async="async"></script>
+
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+    analytics.load("PWGVK5i3ebeUKs6oXX5p261iZxO0kmW5");
+
+    // setup cross domain tracking
+    var domains = ['hired.com', 'hired.co.uk', 'hired.ca', 'hired.com.au', 'hired.com.sg', 'fr.hired.com'];
+    var index = domains.indexOf(window.location.host);
+    if (index > -1) {
+      // domains becomes the array sans the spliced out element
+      domains.splice(index, 1);
+      analytics.ready(function () {
+        ga('require', 'linker');
+        ga('linker:autoLink', domains);
+      });
+    }
+
+    var segmentConfig = window.__HIRED_CONFIG__.vendor.segment;
+    if (segmentConfig) {
+      analytics.identify(segmentConfig.current_user_id, segmentConfig.user_properties, segmentConfig.segment_options);
+      analytics.track('GTM Data Layer Initialization', segmentConfig.user_properties, {
+        integrations: {
+          'All': false,
+          'Google Tag Manager': true
+        }
+      });
+    }
+
+    analytics.page();
+
+  }}();
+</script>
+
+<script src="/assets/application-8d6383ed2a13496bbcca199173f37faf8064f5989cc4ea7f4245808d2d927d2f.js" async="async" debug="false"></script>
+<meta charset='utf-8'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"52b5b06cfe","applicationID":"6081049","transactionName":"JQoMQBcJCVpRRRlVVQgBC1AEEgBFG1hYVFsHFwZdCwFKXFtVaV9aAAoRGxYOCkE=","queueTime":5,"applicationTime":361,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAEHWVdWGwUAXFBSAwg="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<meta content='INDEX, FOLLOW, NOODP, NOYDIR' name='ROBOTS'>
+<meta content='Job Preferences - Hired' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='https://hired.com/assets/social-logo-large-c929a8394b6ac64a8c95ce923341f450be8bf3bc782ba4353735d749147eb07f.png' property='og:image'>
+<meta content='https://hired.com/assets/social-logo-5fa77915065b58709f1824aaaaca31d7e3087ba4cf9baad05bda28950da058ca.png' property='og:image'>
+<meta content='https://hired.com/onboarding/job_info' property='og:url'>
+<meta content='Hired' property='og:site_name'>
+<meta content='12806518' property='fb:admins'>
+<meta content='11003525' property='fb:admins'>
+<meta content='341938729194248' property='fb:app_id'>
+<meta content='Hired has created the best possible way to find a fulfilling job or make an awesome hire. We’ve built a marketplace where in-demand candidates control the job search and field offers from exciting companies looking to hire.' property='og:description'>
+<meta content='1665123' property='uid'>
+<meta content='Hired has created the best possible way to find a fulfilling job or make an awesome hire. We’ve built a marketplace where in-demand candidates control the job search and field offers from exciting companies looking to hire.' name='description'>
+<meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+<meta content='none' name='msapplication-config'>
+<meta content='77fa531398233ba4b21e315eec2e4217' name='p:domain_verify'>
+<meta content='Job Preferences - Hired' name='twitter:title'>
+<meta content='Hired has created the best possible way to find a fulfilling job or make an awesome hire. We’ve built a marketplace where in-demand candidates control the job search and field offers from exciting companies looking to hire.' name='twitter:description'>
+<meta content='https://hired.com/assets/social-logo-5fa77915065b58709f1824aaaaca31d7e3087ba4cf9baad05bda28950da058ca.png' name='twitter:image'>
+<meta content='app-id=1163966118, app-argument=https://hired.com/onboarding/job_info' name='apple-itunes-app'>
+
+
+
+<link rel="stylesheet" media="all" href="/assets/application-51e4632b8a063e3fe935149fee3fc7ea226cef73d2c20cda76a8767b604750b5.css" debug="false" />
+
+<link rel="manifest" href="/manifest.json">
+
+
+</head>
+
+<body id='' class='' data-turbolinks='false'>
+<header class='fluid-container'>
+
+<div class='flashbar flashbar flashbar--red-light xs-none'>
+<a class='flashbar__close' href='#'>×</a>
+<div class='fluid-container'>
+There was a problem communicating with Hired&#39;s servers. Please try again later.
+</div>
+</div>
+
+
+<nav class=' navigationbar'>
+<div class='container'>
+<div class='navigationbar__header'>
+<a class='navigationbar__header__logo' href='/home' target='_self'>
+<div id='hired-brand'>HIRED</div>
+</a>
+</div>
+<div class='navigationbar__toggle'>
+<div class='navigationbar__toggle__element'>
+<img alt='Menu' class='icon icon--sandwich' src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'>
+</div>
+<input class='navigationbar__toggle__helper' type='checkbox'>
+<ul class='navigationbar__navigation xs-text-right'>
+<li class="navigationbar__item "><a href="javascript:void 0;" target="_self" class="xs-none sm-block">Settings <svg class="carat" width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+  <title>dropdown arrow copy 2</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <g id="Desktop-HD-Copy" transform="translate(-829.000000, -28.000000)" stroke-width="2" stroke="#E82F3A">
+      <g id="1-Nav" transform="translate(-10.000000, -1.000000)">
+        <g id="Nav-items" transform="translate(766.000000, 17.000000)">
+          <g id="Employers" transform="translate(0.000000, 6.000000)">
+            <polyline id="dropdown-arrow-copy-2" points="74 7 77 10 80 7"></polyline>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+
+<ul class='navigationbar__dropdown'>
+<li class="navigationbar__dropdown__item"><a class="navigationbar__link" target="_self" href="/settings">My account</a></li>
+<li class="navigationbar__dropdown__item"><a class="navigationbar__link" target="_self" href="/subscriptions/ZHVzdGluQHNlb2dhdG9yLmNvbS8xNjY1MTIz">Contact preferences</a></li>
+<li class="navigationbar__dropdown__item"><a class="navigationbar__link" target="_self" href="/integrations">Integrations</a></li>
+<li class="navigationbar__dropdown__item"><a class="navigationbar__link" target="_self" href="/mailing_address">Address</a></li>
+</ul>
+</a></li><li class="navigationbar__item "><a class="navigationbar__link" target="_self" href="/invite">Invite</a></li>
+<li class="navigationbar__item "><a class="navigationbar__link" target="_self" rel="nofollow" data-method="delete" href="/logout">Sign out</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+</header>
+
+
+<div class='container container--paper'>
+<script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("AutoSaveOnboardingFields", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("JobInfo", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("JobInfosWorkAuth", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("RoleSelection", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<ul class='bare-list xs-mth0 sm-mth-1 xs-mbh0 xs-text-center'>
+<li class='text-gray-light xs-inline xs-gamma xs-inseth1 xs-mrh0'>&bull;</li>
+<li class='xs-inline xs-gamma xs-inseth1 xs-mrh0'>&bull;</li>
+<li class='text-gray-light xs-inline xs-gamma xs-inseth1 xs-mrh0'>&bull;</li>
+<li class='text-gray-light xs-inline xs-gamma xs-inseth1 xs-mrh0'>&bull;</li>
+<li class='text-gray-light xs-inline xs-gamma xs-inseth1 xs-mrh0'>&bull;</li>
+</ul>
+
+<div class='paper xs-mt0' data-ui-component='job-infos-form'>
+<form class="new_candidates_onboarding_job_info" id="new_candidates_onboarding_job_info" action="/onboarding/job_info" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="mdvF+j3HGUNsJboSYwYRabanqlxHEa3LYsRZEnmepSoT60GLHWBLFiLu76a6sT8XULOl22e0MyFlaz+cHsYZ6Q==" /><section>
+<h3 class='paper__title'>Hello, Michael.</h3>
+<p class='paper__subtitle'>Tell us a little bit more about your ideal job.</p>
+</section>
+<hr>
+<section class='xs-pb0' data-ui-component='role-skill'>
+<div class='xs-mb2'><div class="field field--required "><label class="block-label" for="candidates_onboarding_job_info_primary_role_id">What area are you most interested in?</label>
+<div class='tooltip tooltip--top tooltip--is-hidden' data-tooltip='Since your profile is live, please contact your TA   to update your role.' data-ui-component='primary-role-id-field'>
+<div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_4" /><label for="candidates_onboarding_job_info_primary_role_id_4">Software Engineering</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="3" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_3" /><label for="candidates_onboarding_job_info_primary_role_id_3">Design</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_1" /><label for="candidates_onboarding_job_info_primary_role_id_1">Data Science</label></div></div><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_2" /><label for="candidates_onboarding_job_info_primary_role_id_2">Product Management</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_6" /><label for="candidates_onboarding_job_info_primary_role_id_6">Sales</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="8" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_8" /><label for="candidates_onboarding_job_info_primary_role_id_8">Marketing</label></div></div><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="7" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_7" /><label for="candidates_onboarding_job_info_primary_role_id_7">Recruiting / People Ops</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="9" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_9" /><label for="candidates_onboarding_job_info_primary_role_id_9">Finance / Operations</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="5" name="candidates_onboarding_job_info[primary_role_id]" id="candidates_onboarding_job_info_primary_role_id_5" /><label for="candidates_onboarding_job_info_primary_role_id_5">Other</label></div></div></div>
+</div>
+</div>
+</div><div style="display: none;" data-ui-component="other-text-field" data-id="5" class="field field--required "><input class="text-input input--full" placeholder="Please Specify" type="text" name="candidates_onboarding_job_info[other_primary_role]" id="candidates_onboarding_job_info_other_primary_role" />
+</div></div>
+<div class='xs-mb2'><div class="field field--required primary_role_experience_field xs-none" data-ui-component="primary_role_experience_field" data-field-highlight="primary_role_experience_field"><label class="block-label xs-none" data-ui-component="primary-role-experience-1" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Data Science?
+</label><label class="block-label xs-none" data-ui-component="primary-role-experience-2" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Product Management?
+</label><label class="block-label xs-none" data-ui-component="primary-role-experience-3" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Design?
+</label><label class="block-label xs-none" data-ui-component="primary-role-experience-4" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Software Engineering?
+</label><label class="block-label xs-none" data-ui-component="primary-role-experience-5" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Other?
+</label><label class="block-label xs-none" data-ui-component="primary-role-experience-6" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Sales?
+</label><label class="block-label xs-none" data-ui-component="primary-role-experience-7" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Recruiting / People Ops?
+</label><label class="block-label xs-none" data-ui-component="primary-role-experience-8" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Marketing?
+</label><label class="block-label xs-none" data-ui-component="primary-role-experience-9" for="candidates_onboarding_job_info_primary_role_experience">How many years of work experience do you have in Finance / Operations?
+</label><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[primary_role_experience]" id="candidates_onboarding_job_info_primary_role_experience_0-1" /><label for="candidates_onboarding_job_info_primary_role_experience_0-1">0-1</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[primary_role_experience]" id="candidates_onboarding_job_info_primary_role_experience_1-2" /><label for="candidates_onboarding_job_info_primary_role_experience_1-2">1-2</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[primary_role_experience]" id="candidates_onboarding_job_info_primary_role_experience_2-4" /><label for="candidates_onboarding_job_info_primary_role_experience_2-4">2-4</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[primary_role_experience]" id="candidates_onboarding_job_info_primary_role_experience_4-6" /><label for="candidates_onboarding_job_info_primary_role_experience_4-6">4-6</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[primary_role_experience]" id="candidates_onboarding_job_info_primary_role_experience_6" /><label for="candidates_onboarding_job_info_primary_role_experience_6">6+</label></div></div></div>
+</div>
+</div></div>
+<div class='xs-mb2'><script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("RoleYearsOfExperience", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("MaxCheckboxSelect", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<div data-ui-component='skill-roles-field'>
+<div class='xs-none' data-ui-component='skill-roles-field-1'>
+<div data-field-highlight="skill-roles-field" class="field field--required "><label class="inline-block-label xs-mb0" for="candidates_onboarding_job_info_role_ids">What roles are you most interested in?</label>
+<div class='field__meta xs-mbh0'>Choose up to 3</div>
+<div class='checkbox-input-grid__parent' data-ui-component='max-checkbox-select' data-max-selectable='3'>
+<div class="checkbox-input-grid "><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="skill-roles-field" data-role-id="72" data-ui-component="role-checkbox" type="checkbox" value="72" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_72" /><label for="candidates_onboarding_job_info_role_ids_72">Data Analyst</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="7" data-ui-component="role-checkbox" type="checkbox" value="7" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_7" /><label for="candidates_onboarding_job_info_role_ids_7">Data Scientist</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div></div></div>
+</div><div class='xs-mt2'><div data-ui-component="role-yoe-fields-1" class="field field--required xs-none"><label class="block-label xs-mb0" required="required" for="candidates_onboarding_job_info_role_years">How many years of experience do you have in each of the following?</label>
+<div class='field__meta xs-mbh0'>Please exclude internships and school projects</div>
+<div class='xs-mb1 xs-none role-years-72' data-ui-component='role-years' data-role-for='72'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Data Analyst</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][72]" id="candidates_onboarding_job_info_role_years_72_0-1" /><label for="candidates_onboarding_job_info_role_years_72_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][72]" id="candidates_onboarding_job_info_role_years_72_1-2" /><label for="candidates_onboarding_job_info_role_years_72_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][72]" id="candidates_onboarding_job_info_role_years_72_2-4" /><label for="candidates_onboarding_job_info_role_years_72_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][72]" id="candidates_onboarding_job_info_role_years_72_4-6" /><label for="candidates_onboarding_job_info_role_years_72_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][72]" id="candidates_onboarding_job_info_role_years_72_6" /><label for="candidates_onboarding_job_info_role_years_72_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-7' data-ui-component='role-years' data-role-for='7'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Data Scientist</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][7]" id="candidates_onboarding_job_info_role_years_7_0-1" /><label for="candidates_onboarding_job_info_role_years_7_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][7]" id="candidates_onboarding_job_info_role_years_7_1-2" /><label for="candidates_onboarding_job_info_role_years_7_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][7]" id="candidates_onboarding_job_info_role_years_7_2-4" /><label for="candidates_onboarding_job_info_role_years_7_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][7]" id="candidates_onboarding_job_info_role_years_7_4-6" /><label for="candidates_onboarding_job_info_role_years_7_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][7]" id="candidates_onboarding_job_info_role_years_7_6" /><label for="candidates_onboarding_job_info_role_years_7_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+</div></div>
+</div>
+<div class='xs-none' data-ui-component='skill-roles-field-3'>
+<div data-field-highlight="skill-roles-field" class="field field--required "><label class="inline-block-label xs-mb0" for="candidates_onboarding_job_info_role_ids">What roles are you most interested in?</label>
+<div class='field__meta xs-mbh0'>Choose up to 3</div>
+<div class='checkbox-input-grid__parent' data-ui-component='max-checkbox-select' data-max-selectable='3'>
+<div class="checkbox-input-grid "><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="67" data-ui-component="role-checkbox" type="checkbox" value="67" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_67" /><label for="candidates_onboarding_job_info_role_ids_67">Brand/Graphic Designer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="79" data-ui-component="role-checkbox" type="checkbox" value="79" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_79" /><label for="candidates_onboarding_job_info_role_ids_79">Product Designer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="64" data-ui-component="role-checkbox" type="checkbox" value="64" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_64" /><label for="candidates_onboarding_job_info_role_ids_64">UX Designer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="66" data-ui-component="role-checkbox" type="checkbox" value="66" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_66" /><label for="candidates_onboarding_job_info_role_ids_66">UX Researcher</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="65" data-ui-component="role-checkbox" type="checkbox" value="65" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_65" /><label for="candidates_onboarding_job_info_role_ids_65">Visual/UI Designer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div></div></div>
+</div><div class='xs-mt2'><div data-ui-component="role-yoe-fields-3" class="field field--required xs-none"><label class="block-label xs-mb0" required="required" for="candidates_onboarding_job_info_role_years">How many years of experience do you have in each of the following?</label>
+<div class='field__meta xs-mbh0'>Please exclude internships and school projects</div>
+<div class='xs-mb1 xs-none role-years-67' data-ui-component='role-years' data-role-for='67'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Brand/Graphic Designer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][67]" id="candidates_onboarding_job_info_role_years_67_0-1" /><label for="candidates_onboarding_job_info_role_years_67_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][67]" id="candidates_onboarding_job_info_role_years_67_1-2" /><label for="candidates_onboarding_job_info_role_years_67_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][67]" id="candidates_onboarding_job_info_role_years_67_2-4" /><label for="candidates_onboarding_job_info_role_years_67_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][67]" id="candidates_onboarding_job_info_role_years_67_4-6" /><label for="candidates_onboarding_job_info_role_years_67_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][67]" id="candidates_onboarding_job_info_role_years_67_6" /><label for="candidates_onboarding_job_info_role_years_67_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-79' data-ui-component='role-years' data-role-for='79'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Product Designer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][79]" id="candidates_onboarding_job_info_role_years_79_0-1" /><label for="candidates_onboarding_job_info_role_years_79_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][79]" id="candidates_onboarding_job_info_role_years_79_1-2" /><label for="candidates_onboarding_job_info_role_years_79_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][79]" id="candidates_onboarding_job_info_role_years_79_2-4" /><label for="candidates_onboarding_job_info_role_years_79_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][79]" id="candidates_onboarding_job_info_role_years_79_4-6" /><label for="candidates_onboarding_job_info_role_years_79_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][79]" id="candidates_onboarding_job_info_role_years_79_6" /><label for="candidates_onboarding_job_info_role_years_79_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-64' data-ui-component='role-years' data-role-for='64'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>UX Designer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][64]" id="candidates_onboarding_job_info_role_years_64_0-1" /><label for="candidates_onboarding_job_info_role_years_64_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][64]" id="candidates_onboarding_job_info_role_years_64_1-2" /><label for="candidates_onboarding_job_info_role_years_64_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][64]" id="candidates_onboarding_job_info_role_years_64_2-4" /><label for="candidates_onboarding_job_info_role_years_64_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][64]" id="candidates_onboarding_job_info_role_years_64_4-6" /><label for="candidates_onboarding_job_info_role_years_64_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][64]" id="candidates_onboarding_job_info_role_years_64_6" /><label for="candidates_onboarding_job_info_role_years_64_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-66' data-ui-component='role-years' data-role-for='66'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>UX Researcher</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][66]" id="candidates_onboarding_job_info_role_years_66_0-1" /><label for="candidates_onboarding_job_info_role_years_66_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][66]" id="candidates_onboarding_job_info_role_years_66_1-2" /><label for="candidates_onboarding_job_info_role_years_66_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][66]" id="candidates_onboarding_job_info_role_years_66_2-4" /><label for="candidates_onboarding_job_info_role_years_66_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][66]" id="candidates_onboarding_job_info_role_years_66_4-6" /><label for="candidates_onboarding_job_info_role_years_66_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][66]" id="candidates_onboarding_job_info_role_years_66_6" /><label for="candidates_onboarding_job_info_role_years_66_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-65' data-ui-component='role-years' data-role-for='65'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Visual/UI Designer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][65]" id="candidates_onboarding_job_info_role_years_65_0-1" /><label for="candidates_onboarding_job_info_role_years_65_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][65]" id="candidates_onboarding_job_info_role_years_65_1-2" /><label for="candidates_onboarding_job_info_role_years_65_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][65]" id="candidates_onboarding_job_info_role_years_65_2-4" /><label for="candidates_onboarding_job_info_role_years_65_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][65]" id="candidates_onboarding_job_info_role_years_65_4-6" /><label for="candidates_onboarding_job_info_role_years_65_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][65]" id="candidates_onboarding_job_info_role_years_65_6" /><label for="candidates_onboarding_job_info_role_years_65_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+</div></div>
+</div>
+<div class='xs-none' data-ui-component='skill-roles-field-4'>
+<div data-field-highlight="skill-roles-field" class="field field--required "><label class="inline-block-label xs-mb0" for="candidates_onboarding_job_info_role_ids">What roles are you most interested in?</label>
+<div class='field__meta xs-mbh0'>Choose up to 3</div>
+<div class='checkbox-input-grid__parent' data-ui-component='max-checkbox-select' data-max-selectable='3'>
+<div class="checkbox-input-grid "><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="39" data-ui-component="role-checkbox" type="checkbox" value="39" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_39" /><label for="candidates_onboarding_job_info_role_ids_39">Backend Engineer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="73" data-ui-component="role-checkbox" type="checkbox" value="73" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_73" /><label for="candidates_onboarding_job_info_role_ids_73">Build/Release Engineer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="70" data-ui-component="role-checkbox" type="checkbox" value="70" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_70" /><label for="candidates_onboarding_job_info_role_ids_70">Data Engineer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="69" data-ui-component="role-checkbox" type="checkbox" value="69" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_69" /><label for="candidates_onboarding_job_info_role_ids_69">Database Administrator</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="6" data-ui-component="role-checkbox" type="checkbox" value="6" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_6" /><label for="candidates_onboarding_job_info_role_ids_6">DevOps Engineer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="74" data-ui-component="role-checkbox" type="checkbox" value="74" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_74" /><label for="candidates_onboarding_job_info_role_ids_74">Embedded Engineer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="19" data-ui-component="role-checkbox" type="checkbox" value="19" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_19" /><label for="candidates_onboarding_job_info_role_ids_19">Engineering Manager</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="15" data-ui-component="role-checkbox" type="checkbox" value="15" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_15" /><label for="candidates_onboarding_job_info_role_ids_15">Frontend Engineer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="38" data-ui-component="role-checkbox" type="checkbox" value="38" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_38" /><label for="candidates_onboarding_job_info_role_ids_38">Full Stack Engineer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="85" data-ui-component="role-checkbox" type="checkbox" value="85" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_85" /><label for="candidates_onboarding_job_info_role_ids_85">Machine Learning Engineer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="40" data-ui-component="role-checkbox" type="checkbox" value="40" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_40" /><label for="candidates_onboarding_job_info_role_ids_40">Mobile Engineer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="8" data-ui-component="role-checkbox" type="checkbox" value="8" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_8" /><label for="candidates_onboarding_job_info_role_ids_8">QA/Test Engineer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="37" data-ui-component="role-checkbox" type="checkbox" value="37" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_37" /><label for="candidates_onboarding_job_info_role_ids_37">Security Engineer</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="41" data-ui-component="role-checkbox" type="checkbox" value="41" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_41" /><label for="candidates_onboarding_job_info_role_ids_41">UX Engineer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div></div></div>
+</div><div class='xs-mt2'><div data-ui-component="role-yoe-fields-4" class="field field--required xs-none"><label class="block-label xs-mb0" required="required" for="candidates_onboarding_job_info_role_years">How many years of experience do you have in each of the following?</label>
+<div class='field__meta xs-mbh0'>Please exclude internships and school projects</div>
+<div class='xs-mb1 xs-none role-years-39' data-ui-component='role-years' data-role-for='39'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Backend Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][39]" id="candidates_onboarding_job_info_role_years_39_0-1" /><label for="candidates_onboarding_job_info_role_years_39_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][39]" id="candidates_onboarding_job_info_role_years_39_1-2" /><label for="candidates_onboarding_job_info_role_years_39_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][39]" id="candidates_onboarding_job_info_role_years_39_2-4" /><label for="candidates_onboarding_job_info_role_years_39_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][39]" id="candidates_onboarding_job_info_role_years_39_4-6" /><label for="candidates_onboarding_job_info_role_years_39_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][39]" id="candidates_onboarding_job_info_role_years_39_6" /><label for="candidates_onboarding_job_info_role_years_39_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-73' data-ui-component='role-years' data-role-for='73'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Build/Release Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][73]" id="candidates_onboarding_job_info_role_years_73_0-1" /><label for="candidates_onboarding_job_info_role_years_73_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][73]" id="candidates_onboarding_job_info_role_years_73_1-2" /><label for="candidates_onboarding_job_info_role_years_73_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][73]" id="candidates_onboarding_job_info_role_years_73_2-4" /><label for="candidates_onboarding_job_info_role_years_73_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][73]" id="candidates_onboarding_job_info_role_years_73_4-6" /><label for="candidates_onboarding_job_info_role_years_73_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][73]" id="candidates_onboarding_job_info_role_years_73_6" /><label for="candidates_onboarding_job_info_role_years_73_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-70' data-ui-component='role-years' data-role-for='70'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Data Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][70]" id="candidates_onboarding_job_info_role_years_70_0-1" /><label for="candidates_onboarding_job_info_role_years_70_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][70]" id="candidates_onboarding_job_info_role_years_70_1-2" /><label for="candidates_onboarding_job_info_role_years_70_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][70]" id="candidates_onboarding_job_info_role_years_70_2-4" /><label for="candidates_onboarding_job_info_role_years_70_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][70]" id="candidates_onboarding_job_info_role_years_70_4-6" /><label for="candidates_onboarding_job_info_role_years_70_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][70]" id="candidates_onboarding_job_info_role_years_70_6" /><label for="candidates_onboarding_job_info_role_years_70_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-69' data-ui-component='role-years' data-role-for='69'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Database Administrator</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][69]" id="candidates_onboarding_job_info_role_years_69_0-1" /><label for="candidates_onboarding_job_info_role_years_69_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][69]" id="candidates_onboarding_job_info_role_years_69_1-2" /><label for="candidates_onboarding_job_info_role_years_69_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][69]" id="candidates_onboarding_job_info_role_years_69_2-4" /><label for="candidates_onboarding_job_info_role_years_69_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][69]" id="candidates_onboarding_job_info_role_years_69_4-6" /><label for="candidates_onboarding_job_info_role_years_69_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][69]" id="candidates_onboarding_job_info_role_years_69_6" /><label for="candidates_onboarding_job_info_role_years_69_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-6' data-ui-component='role-years' data-role-for='6'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>DevOps Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][6]" id="candidates_onboarding_job_info_role_years_6_0-1" /><label for="candidates_onboarding_job_info_role_years_6_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][6]" id="candidates_onboarding_job_info_role_years_6_1-2" /><label for="candidates_onboarding_job_info_role_years_6_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][6]" id="candidates_onboarding_job_info_role_years_6_2-4" /><label for="candidates_onboarding_job_info_role_years_6_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][6]" id="candidates_onboarding_job_info_role_years_6_4-6" /><label for="candidates_onboarding_job_info_role_years_6_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][6]" id="candidates_onboarding_job_info_role_years_6_6" /><label for="candidates_onboarding_job_info_role_years_6_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-74' data-ui-component='role-years' data-role-for='74'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Embedded Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][74]" id="candidates_onboarding_job_info_role_years_74_0-1" /><label for="candidates_onboarding_job_info_role_years_74_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][74]" id="candidates_onboarding_job_info_role_years_74_1-2" /><label for="candidates_onboarding_job_info_role_years_74_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][74]" id="candidates_onboarding_job_info_role_years_74_2-4" /><label for="candidates_onboarding_job_info_role_years_74_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][74]" id="candidates_onboarding_job_info_role_years_74_4-6" /><label for="candidates_onboarding_job_info_role_years_74_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][74]" id="candidates_onboarding_job_info_role_years_74_6" /><label for="candidates_onboarding_job_info_role_years_74_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-19' data-ui-component='role-years' data-role-for='19'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Engineering Manager</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][19]" id="candidates_onboarding_job_info_role_years_19_0-1" /><label for="candidates_onboarding_job_info_role_years_19_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][19]" id="candidates_onboarding_job_info_role_years_19_1-2" /><label for="candidates_onboarding_job_info_role_years_19_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][19]" id="candidates_onboarding_job_info_role_years_19_2-4" /><label for="candidates_onboarding_job_info_role_years_19_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][19]" id="candidates_onboarding_job_info_role_years_19_4-6" /><label for="candidates_onboarding_job_info_role_years_19_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][19]" id="candidates_onboarding_job_info_role_years_19_6" /><label for="candidates_onboarding_job_info_role_years_19_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-15' data-ui-component='role-years' data-role-for='15'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Frontend Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][15]" id="candidates_onboarding_job_info_role_years_15_0-1" /><label for="candidates_onboarding_job_info_role_years_15_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][15]" id="candidates_onboarding_job_info_role_years_15_1-2" /><label for="candidates_onboarding_job_info_role_years_15_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][15]" id="candidates_onboarding_job_info_role_years_15_2-4" /><label for="candidates_onboarding_job_info_role_years_15_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][15]" id="candidates_onboarding_job_info_role_years_15_4-6" /><label for="candidates_onboarding_job_info_role_years_15_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][15]" id="candidates_onboarding_job_info_role_years_15_6" /><label for="candidates_onboarding_job_info_role_years_15_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-38' data-ui-component='role-years' data-role-for='38'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Full Stack Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][38]" id="candidates_onboarding_job_info_role_years_38_0-1" /><label for="candidates_onboarding_job_info_role_years_38_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][38]" id="candidates_onboarding_job_info_role_years_38_1-2" /><label for="candidates_onboarding_job_info_role_years_38_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][38]" id="candidates_onboarding_job_info_role_years_38_2-4" /><label for="candidates_onboarding_job_info_role_years_38_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][38]" id="candidates_onboarding_job_info_role_years_38_4-6" /><label for="candidates_onboarding_job_info_role_years_38_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][38]" id="candidates_onboarding_job_info_role_years_38_6" /><label for="candidates_onboarding_job_info_role_years_38_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-85' data-ui-component='role-years' data-role-for='85'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Machine Learning Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][85]" id="candidates_onboarding_job_info_role_years_85_0-1" /><label for="candidates_onboarding_job_info_role_years_85_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][85]" id="candidates_onboarding_job_info_role_years_85_1-2" /><label for="candidates_onboarding_job_info_role_years_85_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][85]" id="candidates_onboarding_job_info_role_years_85_2-4" /><label for="candidates_onboarding_job_info_role_years_85_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][85]" id="candidates_onboarding_job_info_role_years_85_4-6" /><label for="candidates_onboarding_job_info_role_years_85_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][85]" id="candidates_onboarding_job_info_role_years_85_6" /><label for="candidates_onboarding_job_info_role_years_85_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-40' data-ui-component='role-years' data-role-for='40'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Mobile Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][40]" id="candidates_onboarding_job_info_role_years_40_0-1" /><label for="candidates_onboarding_job_info_role_years_40_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][40]" id="candidates_onboarding_job_info_role_years_40_1-2" /><label for="candidates_onboarding_job_info_role_years_40_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][40]" id="candidates_onboarding_job_info_role_years_40_2-4" /><label for="candidates_onboarding_job_info_role_years_40_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][40]" id="candidates_onboarding_job_info_role_years_40_4-6" /><label for="candidates_onboarding_job_info_role_years_40_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][40]" id="candidates_onboarding_job_info_role_years_40_6" /><label for="candidates_onboarding_job_info_role_years_40_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-8' data-ui-component='role-years' data-role-for='8'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>QA/Test Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][8]" id="candidates_onboarding_job_info_role_years_8_0-1" /><label for="candidates_onboarding_job_info_role_years_8_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][8]" id="candidates_onboarding_job_info_role_years_8_1-2" /><label for="candidates_onboarding_job_info_role_years_8_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][8]" id="candidates_onboarding_job_info_role_years_8_2-4" /><label for="candidates_onboarding_job_info_role_years_8_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][8]" id="candidates_onboarding_job_info_role_years_8_4-6" /><label for="candidates_onboarding_job_info_role_years_8_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][8]" id="candidates_onboarding_job_info_role_years_8_6" /><label for="candidates_onboarding_job_info_role_years_8_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-37' data-ui-component='role-years' data-role-for='37'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Security Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][37]" id="candidates_onboarding_job_info_role_years_37_0-1" /><label for="candidates_onboarding_job_info_role_years_37_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][37]" id="candidates_onboarding_job_info_role_years_37_1-2" /><label for="candidates_onboarding_job_info_role_years_37_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][37]" id="candidates_onboarding_job_info_role_years_37_2-4" /><label for="candidates_onboarding_job_info_role_years_37_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][37]" id="candidates_onboarding_job_info_role_years_37_4-6" /><label for="candidates_onboarding_job_info_role_years_37_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][37]" id="candidates_onboarding_job_info_role_years_37_6" /><label for="candidates_onboarding_job_info_role_years_37_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-41' data-ui-component='role-years' data-role-for='41'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>UX Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][41]" id="candidates_onboarding_job_info_role_years_41_0-1" /><label for="candidates_onboarding_job_info_role_years_41_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][41]" id="candidates_onboarding_job_info_role_years_41_1-2" /><label for="candidates_onboarding_job_info_role_years_41_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][41]" id="candidates_onboarding_job_info_role_years_41_2-4" /><label for="candidates_onboarding_job_info_role_years_41_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][41]" id="candidates_onboarding_job_info_role_years_41_4-6" /><label for="candidates_onboarding_job_info_role_years_41_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][41]" id="candidates_onboarding_job_info_role_years_41_6" /><label for="candidates_onboarding_job_info_role_years_41_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+</div></div>
+</div>
+<div class='xs-none' data-ui-component='skill-roles-field-6'>
+<div data-field-highlight="skill-roles-field" class="field field--required "><label class="inline-block-label xs-mb0" for="candidates_onboarding_job_info_role_ids">What roles are you most interested in?</label>
+<span class='tooltip tooltip--wide tooltip--right' data-tooltip='Account Executives close new business.
+Account Managers manage and upsell existing customers.
+Customer Success Managers manage customer&#39;s product adoption.
+Sales Engineers conduct custom product demos and manage technical integration.
+Sales Development Representatives (SDR) prospect and qualify new business leads.
+Sales Managers design and implement sales strategies, and lead a team of sales reps.'>
+<i class='fa fa-lg fa-question-circle text-gray'></i>
+</span>
+<div class='field__meta xs-mbh0'>Choose up to 3</div>
+<div class='checkbox-input-grid__parent' data-ui-component='max-checkbox-select' data-max-selectable='3'>
+<div class="checkbox-input-grid "><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="23" data-ui-component="role-checkbox" type="checkbox" value="23" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_23" /><label for="candidates_onboarding_job_info_role_ids_23">Account Executive</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="34" data-ui-component="role-checkbox" type="checkbox" value="34" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_34" /><label for="candidates_onboarding_job_info_role_ids_34">Account Manager</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="84" data-ui-component="role-checkbox" type="checkbox" value="84" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_84" /><label for="candidates_onboarding_job_info_role_ids_84">Business Development</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="36" data-ui-component="role-checkbox" type="checkbox" value="36" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_36" /><label for="candidates_onboarding_job_info_role_ids_36">Customer Success Manager</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="31" data-ui-component="role-checkbox" type="checkbox" value="31" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_31" /><label for="candidates_onboarding_job_info_role_ids_31">Sales Development Rep</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="71" data-ui-component="role-checkbox" type="checkbox" value="71" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_71" /><label for="candidates_onboarding_job_info_role_ids_71">Sales Engineer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="29" data-ui-component="role-checkbox" type="checkbox" value="29" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_29" /><label for="candidates_onboarding_job_info_role_ids_29">Sales Manager</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="83" data-ui-component="role-checkbox" type="checkbox" value="83" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_83" /><label for="candidates_onboarding_job_info_role_ids_83">Sales Operations</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div></div></div>
+</div><div class='xs-mt2'><div data-ui-component="role-yoe-fields-6" class="field field--required xs-none"><label class="block-label xs-mb0" required="required" for="candidates_onboarding_job_info_role_years">How many years of experience do you have in each of the following?</label>
+<div class='field__meta xs-mbh0'>Please exclude internships and school projects</div>
+<div class='xs-mb1 xs-none role-years-23' data-ui-component='role-years' data-role-for='23'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Account Executive</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][23]" id="candidates_onboarding_job_info_role_years_23_0-1" /><label for="candidates_onboarding_job_info_role_years_23_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][23]" id="candidates_onboarding_job_info_role_years_23_1-2" /><label for="candidates_onboarding_job_info_role_years_23_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][23]" id="candidates_onboarding_job_info_role_years_23_2-4" /><label for="candidates_onboarding_job_info_role_years_23_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][23]" id="candidates_onboarding_job_info_role_years_23_4-6" /><label for="candidates_onboarding_job_info_role_years_23_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][23]" id="candidates_onboarding_job_info_role_years_23_6" /><label for="candidates_onboarding_job_info_role_years_23_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-34' data-ui-component='role-years' data-role-for='34'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Account Manager</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][34]" id="candidates_onboarding_job_info_role_years_34_0-1" /><label for="candidates_onboarding_job_info_role_years_34_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][34]" id="candidates_onboarding_job_info_role_years_34_1-2" /><label for="candidates_onboarding_job_info_role_years_34_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][34]" id="candidates_onboarding_job_info_role_years_34_2-4" /><label for="candidates_onboarding_job_info_role_years_34_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][34]" id="candidates_onboarding_job_info_role_years_34_4-6" /><label for="candidates_onboarding_job_info_role_years_34_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][34]" id="candidates_onboarding_job_info_role_years_34_6" /><label for="candidates_onboarding_job_info_role_years_34_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-84' data-ui-component='role-years' data-role-for='84'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Business Development</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][84]" id="candidates_onboarding_job_info_role_years_84_0-1" /><label for="candidates_onboarding_job_info_role_years_84_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][84]" id="candidates_onboarding_job_info_role_years_84_1-2" /><label for="candidates_onboarding_job_info_role_years_84_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][84]" id="candidates_onboarding_job_info_role_years_84_2-4" /><label for="candidates_onboarding_job_info_role_years_84_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][84]" id="candidates_onboarding_job_info_role_years_84_4-6" /><label for="candidates_onboarding_job_info_role_years_84_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][84]" id="candidates_onboarding_job_info_role_years_84_6" /><label for="candidates_onboarding_job_info_role_years_84_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-36' data-ui-component='role-years' data-role-for='36'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Customer Success Manager</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][36]" id="candidates_onboarding_job_info_role_years_36_0-1" /><label for="candidates_onboarding_job_info_role_years_36_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][36]" id="candidates_onboarding_job_info_role_years_36_1-2" /><label for="candidates_onboarding_job_info_role_years_36_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][36]" id="candidates_onboarding_job_info_role_years_36_2-4" /><label for="candidates_onboarding_job_info_role_years_36_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][36]" id="candidates_onboarding_job_info_role_years_36_4-6" /><label for="candidates_onboarding_job_info_role_years_36_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][36]" id="candidates_onboarding_job_info_role_years_36_6" /><label for="candidates_onboarding_job_info_role_years_36_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-31' data-ui-component='role-years' data-role-for='31'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Sales Development Rep</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][31]" id="candidates_onboarding_job_info_role_years_31_0-1" /><label for="candidates_onboarding_job_info_role_years_31_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][31]" id="candidates_onboarding_job_info_role_years_31_1-2" /><label for="candidates_onboarding_job_info_role_years_31_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][31]" id="candidates_onboarding_job_info_role_years_31_2-4" /><label for="candidates_onboarding_job_info_role_years_31_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][31]" id="candidates_onboarding_job_info_role_years_31_4-6" /><label for="candidates_onboarding_job_info_role_years_31_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][31]" id="candidates_onboarding_job_info_role_years_31_6" /><label for="candidates_onboarding_job_info_role_years_31_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-71' data-ui-component='role-years' data-role-for='71'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Sales Engineer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][71]" id="candidates_onboarding_job_info_role_years_71_0-1" /><label for="candidates_onboarding_job_info_role_years_71_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][71]" id="candidates_onboarding_job_info_role_years_71_1-2" /><label for="candidates_onboarding_job_info_role_years_71_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][71]" id="candidates_onboarding_job_info_role_years_71_2-4" /><label for="candidates_onboarding_job_info_role_years_71_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][71]" id="candidates_onboarding_job_info_role_years_71_4-6" /><label for="candidates_onboarding_job_info_role_years_71_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][71]" id="candidates_onboarding_job_info_role_years_71_6" /><label for="candidates_onboarding_job_info_role_years_71_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-29' data-ui-component='role-years' data-role-for='29'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Sales Manager</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][29]" id="candidates_onboarding_job_info_role_years_29_0-1" /><label for="candidates_onboarding_job_info_role_years_29_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][29]" id="candidates_onboarding_job_info_role_years_29_1-2" /><label for="candidates_onboarding_job_info_role_years_29_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][29]" id="candidates_onboarding_job_info_role_years_29_2-4" /><label for="candidates_onboarding_job_info_role_years_29_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][29]" id="candidates_onboarding_job_info_role_years_29_4-6" /><label for="candidates_onboarding_job_info_role_years_29_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][29]" id="candidates_onboarding_job_info_role_years_29_6" /><label for="candidates_onboarding_job_info_role_years_29_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-83' data-ui-component='role-years' data-role-for='83'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Sales Operations</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][83]" id="candidates_onboarding_job_info_role_years_83_0-1" /><label for="candidates_onboarding_job_info_role_years_83_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][83]" id="candidates_onboarding_job_info_role_years_83_1-2" /><label for="candidates_onboarding_job_info_role_years_83_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][83]" id="candidates_onboarding_job_info_role_years_83_2-4" /><label for="candidates_onboarding_job_info_role_years_83_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][83]" id="candidates_onboarding_job_info_role_years_83_4-6" /><label for="candidates_onboarding_job_info_role_years_83_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][83]" id="candidates_onboarding_job_info_role_years_83_6" /><label for="candidates_onboarding_job_info_role_years_83_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+</div></div>
+</div>
+<div class='xs-none' data-ui-component='skill-roles-field-7'>
+<div data-field-highlight="skill-roles-field" class="field field--required "><label class="inline-block-label xs-mb0" for="candidates_onboarding_job_info_role_ids">What roles are you most interested in?</label>
+<div class='field__meta xs-mbh0'>Choose up to 3</div>
+<div class='checkbox-input-grid__parent' data-ui-component='max-checkbox-select' data-max-selectable='3'>
+<div class="checkbox-input-grid "><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="86" data-ui-component="role-checkbox" type="checkbox" value="86" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_86" /><label for="candidates_onboarding_job_info_role_ids_86">HR Business Partner</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="51" data-ui-component="role-checkbox" type="checkbox" value="51" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_51" /><label for="candidates_onboarding_job_info_role_ids_51">People Ops Management</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="52" data-ui-component="role-checkbox" type="checkbox" value="52" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_52" /><label for="candidates_onboarding_job_info_role_ids_52">People Ops Specialist</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="88" data-ui-component="role-checkbox" type="checkbox" value="88" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_88" /><label for="candidates_onboarding_job_info_role_ids_88">Recruiter</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="87" data-ui-component="role-checkbox" type="checkbox" value="87" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_87" /><label for="candidates_onboarding_job_info_role_ids_87">Recruiting Coordinator</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="50" data-ui-component="role-checkbox" type="checkbox" value="50" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_50" /><label for="candidates_onboarding_job_info_role_ids_50">Sourcer</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div></div></div>
+</div><div class='xs-mt2'><div data-ui-component="role-yoe-fields-7" class="field field--required xs-none"><label class="block-label xs-mb0" required="required" for="candidates_onboarding_job_info_role_years">How many years of experience do you have in each of the following?</label>
+<div class='field__meta xs-mbh0'>Please exclude internships and school projects</div>
+<div class='xs-mb1 xs-none role-years-86' data-ui-component='role-years' data-role-for='86'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>HR Business Partner</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][86]" id="candidates_onboarding_job_info_role_years_86_0-1" /><label for="candidates_onboarding_job_info_role_years_86_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][86]" id="candidates_onboarding_job_info_role_years_86_1-2" /><label for="candidates_onboarding_job_info_role_years_86_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][86]" id="candidates_onboarding_job_info_role_years_86_2-4" /><label for="candidates_onboarding_job_info_role_years_86_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][86]" id="candidates_onboarding_job_info_role_years_86_4-6" /><label for="candidates_onboarding_job_info_role_years_86_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][86]" id="candidates_onboarding_job_info_role_years_86_6" /><label for="candidates_onboarding_job_info_role_years_86_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-51' data-ui-component='role-years' data-role-for='51'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>People Ops Management</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][51]" id="candidates_onboarding_job_info_role_years_51_0-1" /><label for="candidates_onboarding_job_info_role_years_51_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][51]" id="candidates_onboarding_job_info_role_years_51_1-2" /><label for="candidates_onboarding_job_info_role_years_51_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][51]" id="candidates_onboarding_job_info_role_years_51_2-4" /><label for="candidates_onboarding_job_info_role_years_51_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][51]" id="candidates_onboarding_job_info_role_years_51_4-6" /><label for="candidates_onboarding_job_info_role_years_51_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][51]" id="candidates_onboarding_job_info_role_years_51_6" /><label for="candidates_onboarding_job_info_role_years_51_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-52' data-ui-component='role-years' data-role-for='52'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>People Ops Specialist</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][52]" id="candidates_onboarding_job_info_role_years_52_0-1" /><label for="candidates_onboarding_job_info_role_years_52_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][52]" id="candidates_onboarding_job_info_role_years_52_1-2" /><label for="candidates_onboarding_job_info_role_years_52_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][52]" id="candidates_onboarding_job_info_role_years_52_2-4" /><label for="candidates_onboarding_job_info_role_years_52_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][52]" id="candidates_onboarding_job_info_role_years_52_4-6" /><label for="candidates_onboarding_job_info_role_years_52_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][52]" id="candidates_onboarding_job_info_role_years_52_6" /><label for="candidates_onboarding_job_info_role_years_52_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-88' data-ui-component='role-years' data-role-for='88'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Recruiter</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][88]" id="candidates_onboarding_job_info_role_years_88_0-1" /><label for="candidates_onboarding_job_info_role_years_88_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][88]" id="candidates_onboarding_job_info_role_years_88_1-2" /><label for="candidates_onboarding_job_info_role_years_88_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][88]" id="candidates_onboarding_job_info_role_years_88_2-4" /><label for="candidates_onboarding_job_info_role_years_88_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][88]" id="candidates_onboarding_job_info_role_years_88_4-6" /><label for="candidates_onboarding_job_info_role_years_88_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][88]" id="candidates_onboarding_job_info_role_years_88_6" /><label for="candidates_onboarding_job_info_role_years_88_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-87' data-ui-component='role-years' data-role-for='87'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Recruiting Coordinator</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][87]" id="candidates_onboarding_job_info_role_years_87_0-1" /><label for="candidates_onboarding_job_info_role_years_87_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][87]" id="candidates_onboarding_job_info_role_years_87_1-2" /><label for="candidates_onboarding_job_info_role_years_87_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][87]" id="candidates_onboarding_job_info_role_years_87_2-4" /><label for="candidates_onboarding_job_info_role_years_87_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][87]" id="candidates_onboarding_job_info_role_years_87_4-6" /><label for="candidates_onboarding_job_info_role_years_87_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][87]" id="candidates_onboarding_job_info_role_years_87_6" /><label for="candidates_onboarding_job_info_role_years_87_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-50' data-ui-component='role-years' data-role-for='50'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Sourcer</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][50]" id="candidates_onboarding_job_info_role_years_50_0-1" /><label for="candidates_onboarding_job_info_role_years_50_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][50]" id="candidates_onboarding_job_info_role_years_50_1-2" /><label for="candidates_onboarding_job_info_role_years_50_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][50]" id="candidates_onboarding_job_info_role_years_50_2-4" /><label for="candidates_onboarding_job_info_role_years_50_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][50]" id="candidates_onboarding_job_info_role_years_50_4-6" /><label for="candidates_onboarding_job_info_role_years_50_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][50]" id="candidates_onboarding_job_info_role_years_50_6" /><label for="candidates_onboarding_job_info_role_years_50_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+</div></div>
+</div>
+<div class='xs-none' data-ui-component='skill-roles-field-8'>
+<div data-field-highlight="skill-roles-field" class="field field--required "><label class="inline-block-label xs-mb0" for="candidates_onboarding_job_info_role_ids">What roles are you most interested in?</label>
+<span class='tooltip tooltip--wide tooltip--right' data-tooltip='Content Marketing - Examples: Content Marketing Manager, SEO
+Data Analytics &amp; Attribution - Example: Marketing Analyst
+Demand Generation - Example: Demand Generation Manager
+Email Marketing - Examples: Email Marketing Manager, Marketing Automation
+Event Marketing - Example: Events Marketing Manager
+Paid Marketing - Examples: SEM, Paid, Social, Retargeting, Display
+PR / Communications - Examples: PR Manager, Communication Manager, Social Media Manager
+Product Marketing - Examples: Product Marketing Manager, Brand Manager'>
+<i class='fa fa-lg fa-question-circle text-gray'></i>
+</span>
+<div class='field__meta xs-mbh0'>Choose up to 3</div>
+<div class='checkbox-input-grid__parent' data-ui-component='max-checkbox-select' data-max-selectable='3'>
+<div class="checkbox-input-grid "><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="81" data-ui-component="role-checkbox" type="checkbox" value="81" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_81" /><label for="candidates_onboarding_job_info_role_ids_81">Acquisition Marketing</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="80" data-ui-component="role-checkbox" type="checkbox" value="80" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_80" /><label for="candidates_onboarding_job_info_role_ids_80">Brand Marketing</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="55" data-ui-component="role-checkbox" type="checkbox" value="55" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_55" /><label for="candidates_onboarding_job_info_role_ids_55">Community/Events Marketing</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="77" data-ui-component="role-checkbox" type="checkbox" value="77" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_77" /><label for="candidates_onboarding_job_info_role_ids_77">Content Marketing</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="53" data-ui-component="role-checkbox" type="checkbox" value="53" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_53" /><label for="candidates_onboarding_job_info_role_ids_53">Lifecycle/Email Marketing</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="56" data-ui-component="role-checkbox" type="checkbox" value="56" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_56" /><label for="candidates_onboarding_job_info_role_ids_56">Marketing Analytics &amp; Ops</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="82" data-ui-component="role-checkbox" type="checkbox" value="82" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_82" /><label for="candidates_onboarding_job_info_role_ids_82">Marketing Programs</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="61" data-ui-component="role-checkbox" type="checkbox" value="61" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_61" /><label for="candidates_onboarding_job_info_role_ids_61">PR / Communications</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="76" data-ui-component="role-checkbox" type="checkbox" value="76" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_76" /><label for="candidates_onboarding_job_info_role_ids_76">Product Marketing</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div></div></div>
+</div><div class='xs-mt2'><div data-ui-component="role-yoe-fields-8" class="field field--required xs-none"><label class="block-label xs-mb0" required="required" for="candidates_onboarding_job_info_role_years">How many years of experience do you have in each of the following?</label>
+<div class='field__meta xs-mbh0'>Please exclude internships and school projects</div>
+<div class='xs-mb1 xs-none role-years-81' data-ui-component='role-years' data-role-for='81'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Acquisition Marketing</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][81]" id="candidates_onboarding_job_info_role_years_81_0-1" /><label for="candidates_onboarding_job_info_role_years_81_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][81]" id="candidates_onboarding_job_info_role_years_81_1-2" /><label for="candidates_onboarding_job_info_role_years_81_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][81]" id="candidates_onboarding_job_info_role_years_81_2-4" /><label for="candidates_onboarding_job_info_role_years_81_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][81]" id="candidates_onboarding_job_info_role_years_81_4-6" /><label for="candidates_onboarding_job_info_role_years_81_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][81]" id="candidates_onboarding_job_info_role_years_81_6" /><label for="candidates_onboarding_job_info_role_years_81_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-80' data-ui-component='role-years' data-role-for='80'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Brand Marketing</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][80]" id="candidates_onboarding_job_info_role_years_80_0-1" /><label for="candidates_onboarding_job_info_role_years_80_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][80]" id="candidates_onboarding_job_info_role_years_80_1-2" /><label for="candidates_onboarding_job_info_role_years_80_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][80]" id="candidates_onboarding_job_info_role_years_80_2-4" /><label for="candidates_onboarding_job_info_role_years_80_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][80]" id="candidates_onboarding_job_info_role_years_80_4-6" /><label for="candidates_onboarding_job_info_role_years_80_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][80]" id="candidates_onboarding_job_info_role_years_80_6" /><label for="candidates_onboarding_job_info_role_years_80_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-55' data-ui-component='role-years' data-role-for='55'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Community/Events Marketing</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][55]" id="candidates_onboarding_job_info_role_years_55_0-1" /><label for="candidates_onboarding_job_info_role_years_55_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][55]" id="candidates_onboarding_job_info_role_years_55_1-2" /><label for="candidates_onboarding_job_info_role_years_55_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][55]" id="candidates_onboarding_job_info_role_years_55_2-4" /><label for="candidates_onboarding_job_info_role_years_55_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][55]" id="candidates_onboarding_job_info_role_years_55_4-6" /><label for="candidates_onboarding_job_info_role_years_55_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][55]" id="candidates_onboarding_job_info_role_years_55_6" /><label for="candidates_onboarding_job_info_role_years_55_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-77' data-ui-component='role-years' data-role-for='77'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Content Marketing</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][77]" id="candidates_onboarding_job_info_role_years_77_0-1" /><label for="candidates_onboarding_job_info_role_years_77_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][77]" id="candidates_onboarding_job_info_role_years_77_1-2" /><label for="candidates_onboarding_job_info_role_years_77_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][77]" id="candidates_onboarding_job_info_role_years_77_2-4" /><label for="candidates_onboarding_job_info_role_years_77_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][77]" id="candidates_onboarding_job_info_role_years_77_4-6" /><label for="candidates_onboarding_job_info_role_years_77_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][77]" id="candidates_onboarding_job_info_role_years_77_6" /><label for="candidates_onboarding_job_info_role_years_77_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-53' data-ui-component='role-years' data-role-for='53'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Lifecycle/Email Marketing</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][53]" id="candidates_onboarding_job_info_role_years_53_0-1" /><label for="candidates_onboarding_job_info_role_years_53_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][53]" id="candidates_onboarding_job_info_role_years_53_1-2" /><label for="candidates_onboarding_job_info_role_years_53_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][53]" id="candidates_onboarding_job_info_role_years_53_2-4" /><label for="candidates_onboarding_job_info_role_years_53_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][53]" id="candidates_onboarding_job_info_role_years_53_4-6" /><label for="candidates_onboarding_job_info_role_years_53_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][53]" id="candidates_onboarding_job_info_role_years_53_6" /><label for="candidates_onboarding_job_info_role_years_53_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-56' data-ui-component='role-years' data-role-for='56'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Marketing Analytics &amp; Ops</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][56]" id="candidates_onboarding_job_info_role_years_56_0-1" /><label for="candidates_onboarding_job_info_role_years_56_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][56]" id="candidates_onboarding_job_info_role_years_56_1-2" /><label for="candidates_onboarding_job_info_role_years_56_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][56]" id="candidates_onboarding_job_info_role_years_56_2-4" /><label for="candidates_onboarding_job_info_role_years_56_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][56]" id="candidates_onboarding_job_info_role_years_56_4-6" /><label for="candidates_onboarding_job_info_role_years_56_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][56]" id="candidates_onboarding_job_info_role_years_56_6" /><label for="candidates_onboarding_job_info_role_years_56_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-82' data-ui-component='role-years' data-role-for='82'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Marketing Programs</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][82]" id="candidates_onboarding_job_info_role_years_82_0-1" /><label for="candidates_onboarding_job_info_role_years_82_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][82]" id="candidates_onboarding_job_info_role_years_82_1-2" /><label for="candidates_onboarding_job_info_role_years_82_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][82]" id="candidates_onboarding_job_info_role_years_82_2-4" /><label for="candidates_onboarding_job_info_role_years_82_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][82]" id="candidates_onboarding_job_info_role_years_82_4-6" /><label for="candidates_onboarding_job_info_role_years_82_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][82]" id="candidates_onboarding_job_info_role_years_82_6" /><label for="candidates_onboarding_job_info_role_years_82_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-61' data-ui-component='role-years' data-role-for='61'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>PR / Communications</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][61]" id="candidates_onboarding_job_info_role_years_61_0-1" /><label for="candidates_onboarding_job_info_role_years_61_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][61]" id="candidates_onboarding_job_info_role_years_61_1-2" /><label for="candidates_onboarding_job_info_role_years_61_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][61]" id="candidates_onboarding_job_info_role_years_61_2-4" /><label for="candidates_onboarding_job_info_role_years_61_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][61]" id="candidates_onboarding_job_info_role_years_61_4-6" /><label for="candidates_onboarding_job_info_role_years_61_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][61]" id="candidates_onboarding_job_info_role_years_61_6" /><label for="candidates_onboarding_job_info_role_years_61_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-76' data-ui-component='role-years' data-role-for='76'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Product Marketing</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][76]" id="candidates_onboarding_job_info_role_years_76_0-1" /><label for="candidates_onboarding_job_info_role_years_76_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][76]" id="candidates_onboarding_job_info_role_years_76_1-2" /><label for="candidates_onboarding_job_info_role_years_76_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][76]" id="candidates_onboarding_job_info_role_years_76_2-4" /><label for="candidates_onboarding_job_info_role_years_76_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][76]" id="candidates_onboarding_job_info_role_years_76_4-6" /><label for="candidates_onboarding_job_info_role_years_76_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][76]" id="candidates_onboarding_job_info_role_years_76_6" /><label for="candidates_onboarding_job_info_role_years_76_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+</div></div>
+</div>
+<div class='xs-none' data-ui-component='skill-roles-field-9'>
+<div data-field-highlight="skill-roles-field" class="field field--required "><label class="inline-block-label xs-mb0" for="candidates_onboarding_job_info_role_ids">What roles are you most interested in?</label>
+<div class='field__meta xs-mbh0'>Choose up to 3</div>
+<div class='checkbox-input-grid__parent' data-ui-component='max-checkbox-select' data-max-selectable='3'>
+<div class="checkbox-input-grid "><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="63" data-ui-component="role-checkbox" type="checkbox" value="63" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_63" /><label for="candidates_onboarding_job_info_role_ids_63">Accounting</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="62" data-ui-component="role-checkbox" type="checkbox" value="62" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_62" /><label for="candidates_onboarding_job_info_role_ids_62">Financial Management / Analysis</label>
+</div><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="44" data-ui-component="role-checkbox" type="checkbox" value="44" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_44" /><label for="candidates_onboarding_job_info_role_ids_44">General Management</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="radio-input" data-field-focus="false" data-role-id="47" data-ui-component="role-checkbox" type="checkbox" value="47" name="candidates_onboarding_job_info[role_ids][]" id="candidates_onboarding_job_info_role_ids_47" /><label for="candidates_onboarding_job_info_role_ids_47">Office Administration</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[role_ids][]" value="" /></div></div></div>
+</div><div class='xs-mt2'><div data-ui-component="role-yoe-fields-9" class="field field--required xs-none"><label class="block-label xs-mb0" required="required" for="candidates_onboarding_job_info_role_years">How many years of experience do you have in each of the following?</label>
+<div class='field__meta xs-mbh0'>Please exclude internships and school projects</div>
+<div class='xs-mb1 xs-none role-years-63' data-ui-component='role-years' data-role-for='63'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Accounting</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][63]" id="candidates_onboarding_job_info_role_years_63_0-1" /><label for="candidates_onboarding_job_info_role_years_63_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][63]" id="candidates_onboarding_job_info_role_years_63_1-2" /><label for="candidates_onboarding_job_info_role_years_63_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][63]" id="candidates_onboarding_job_info_role_years_63_2-4" /><label for="candidates_onboarding_job_info_role_years_63_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][63]" id="candidates_onboarding_job_info_role_years_63_4-6" /><label for="candidates_onboarding_job_info_role_years_63_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][63]" id="candidates_onboarding_job_info_role_years_63_6" /><label for="candidates_onboarding_job_info_role_years_63_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-62' data-ui-component='role-years' data-role-for='62'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Financial Management / Analysis</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][62]" id="candidates_onboarding_job_info_role_years_62_0-1" /><label for="candidates_onboarding_job_info_role_years_62_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][62]" id="candidates_onboarding_job_info_role_years_62_1-2" /><label for="candidates_onboarding_job_info_role_years_62_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][62]" id="candidates_onboarding_job_info_role_years_62_2-4" /><label for="candidates_onboarding_job_info_role_years_62_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][62]" id="candidates_onboarding_job_info_role_years_62_4-6" /><label for="candidates_onboarding_job_info_role_years_62_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][62]" id="candidates_onboarding_job_info_role_years_62_6" /><label for="candidates_onboarding_job_info_role_years_62_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-44' data-ui-component='role-years' data-role-for='44'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>General Management</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][44]" id="candidates_onboarding_job_info_role_years_44_0-1" /><label for="candidates_onboarding_job_info_role_years_44_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][44]" id="candidates_onboarding_job_info_role_years_44_1-2" /><label for="candidates_onboarding_job_info_role_years_44_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][44]" id="candidates_onboarding_job_info_role_years_44_2-4" /><label for="candidates_onboarding_job_info_role_years_44_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][44]" id="candidates_onboarding_job_info_role_years_44_4-6" /><label for="candidates_onboarding_job_info_role_years_44_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][44]" id="candidates_onboarding_job_info_role_years_44_6" /><label for="candidates_onboarding_job_info_role_years_44_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+<div class='xs-mb1 xs-none role-years-47' data-ui-component='role-years' data-role-for='47'>
+<div class='layout layout--middle'>
+<div class='layout__item sm-3of12'><label class='a--pseudo text-gray-dark'>Office Administration</label></div><div class='layout__item sm-9of12'><div class='radio-input-grid__parent'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="0-1" name="candidates_onboarding_job_info[role_years][47]" id="candidates_onboarding_job_info_role_years_47_0-1" /><label for="candidates_onboarding_job_info_role_years_47_0-1">0-1</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="1-2" name="candidates_onboarding_job_info[role_years][47]" id="candidates_onboarding_job_info_role_years_47_1-2" /><label for="candidates_onboarding_job_info_role_years_47_1-2">1-2</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="2-4" name="candidates_onboarding_job_info[role_years][47]" id="candidates_onboarding_job_info_role_years_47_2-4" /><label for="candidates_onboarding_job_info_role_years_47_2-4">2-4</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="4-6" name="candidates_onboarding_job_info[role_years][47]" id="candidates_onboarding_job_info_role_years_47_4-6" /><label for="candidates_onboarding_job_info_role_years_47_4-6">4-6</label>
+</div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="6+" name="candidates_onboarding_job_info[role_years][47]" id="candidates_onboarding_job_info_role_years_47_6" /><label for="candidates_onboarding_job_info_role_years_47_6">6+</label>
+</div></div></div></div></div></div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+<div class='xs-mb2'><script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("CandidateSkillsChooser", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<div class=' xs-none field field--required' data-ui-component='candidate-skills-chooser'>
+<label class='block-label xs-block xs-mb0'>
+<strong>Add five of your top skills below.</strong>
+</label>
+<div class='field__meta xs-mb1'>Make sure to include hard skills like tools, technologies, languages, and frameworks</div>
+<div class='skills-chooser'>
+<div class='xs-text-center xs-4 flex flex--center'>
+<h4>Loading…</h4>
+</div>
+</div>
+<input data-ui-component="skills-list" type="hidden" value="" name="candidates_onboarding_job_info[skills_list]" id="candidates_onboarding_job_info_skills_list" />
+</div>
+</div>
+<div class='xs-mb2'><div class="field field--required "><label class="block-label" for="candidates_onboarding_job_info_remote">Are you interested in working remotely?
+</label><div class='radio-input-grid__parent' data-ui-component='remote-input'>
+<div class="radio-input-grid "><div class=" radio-input-grid__row"><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="no" name="candidates_onboarding_job_info[remote]" id="candidates_onboarding_job_info_remote_no" /><label for="candidates_onboarding_job_info_remote_no">Not Interested</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="yes" name="candidates_onboarding_job_info[remote]" id="candidates_onboarding_job_info_remote_yes" /><label for="candidates_onboarding_job_info_remote_yes">Interested</label></div><div class="radio-input-grid__column"><input class="radio-input" type="radio" value="only" name="candidates_onboarding_job_info[remote]" id="candidates_onboarding_job_info_remote_only" /><label for="candidates_onboarding_job_info_remote_only">Remote Only</label></div></div></div>
+</div>
+</div></div>
+<div class='xs-mb2'><div data-ui-component='desired-job-types'>
+<div data-field-highlight="employment_type_field" class="field field--required "><div class='layout layout--middle'>
+<div class='layout__item sm-7of12'><label class="block-label" for="candidates_onboarding_job_info_desired_job_types">What type of employment are you seeking?</label></div><div class='layout__item sm-5of12 xs-mbh0'><div class='field__meta sm-text-right'>You may select multiple.</div></div></div>
+<div class='checkbox-input-grid__parent'>
+<div class="checkbox-input-grid "><div class=" checkbox-input-grid__row"><div class="checkbox-input-grid__column"><input class="checkbox-input" data-ui-component="desired-job-type-full_time" type="checkbox" value="full_time" name="candidates_onboarding_job_info[desired_job_types][]" id="candidates_onboarding_job_info_desired_job_types_full_time" /><label for="candidates_onboarding_job_info_desired_job_types_full_time">Permanent (full-time)</label>
+</div><div class="checkbox-input-grid__column"><input class="checkbox-input" data-ui-component="desired-job-type-contract" type="checkbox" value="contract" name="candidates_onboarding_job_info[desired_job_types][]" id="candidates_onboarding_job_info_desired_job_types_contract" /><label for="candidates_onboarding_job_info_desired_job_types_contract">Contract</label>
+</div><div class="checkbox-input-grid__column"><input class="checkbox-input" data-ui-component="desired-job-type-intern" type="checkbox" value="intern" name="candidates_onboarding_job_info[desired_job_types][]" id="candidates_onboarding_job_info_desired_job_types_intern" /><label for="candidates_onboarding_job_info_desired_job_types_intern">Intern</label>
+</div><input type="hidden" name="candidates_onboarding_job_info[desired_job_types][]" value="" /></div></div></div>
+</div><script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("JobInfoFulltimeContractPreference", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<div class="field field--required xs-none" data-field-highlight="fulltime-contract-preference" data-ui-component="fulltime-contract-preference"><div class='layout'>
+<div class='layout__item xs-mbh0'><label class="block-label" for="candidates_onboarding_job_info_fulltime_contract_preference">What is your employment preference?</label>
+</div><div class='layout__item xs-mbh0'><div class='xs-mbh0'>
+<label class='a--pseudo text-gray-dark text-light'>
+<input class='radio-input xs-mrh0' type='radio' name='candidates_onboarding_job_info[fulltime_contract_preference]' value='full_time' data-ui-component='fulltime-contract-preference-full_time' data-field-focus='fulltime-contract-preference'>
+Prefer permanent roles
+</label>
+</div><div class='xs-mbh0'>
+<label class='a--pseudo text-gray-dark text-light'>
+<input class='radio-input xs-mrh0' type='radio' name='candidates_onboarding_job_info[fulltime_contract_preference]' value='both_equally' data-ui-component='fulltime-contract-preference-both_equally' data-field-focus='fulltime-contract-preference'>
+No preference
+</label>
+</div><div class='xs-mbh0'>
+<label class='a--pseudo text-gray-dark text-light'>
+<input class='radio-input xs-mrh0' type='radio' name='candidates_onboarding_job_info[fulltime_contract_preference]' value='contract' data-ui-component='fulltime-contract-preference-contract' data-field-focus='fulltime-contract-preference'>
+Prefer contract roles
+</label>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class='xs-mb2'><script>
+  $(function () {
+    function loadComponent() {
+      Hired.loadComponent("CandidatePlaceSelections", false);
+    }
+
+    window.Hired ? loadComponent() : $(document).on('hired:loadComponents', loadComponent);
+  });
+</script>
+
+<div data-ui-component="places-chooser" style="" class="field field--required "><label class="block-label xs-mb0" for="candidates_onboarding_job_info_place_selections_names">Where are you willing to work?
+</label><div class='field__meta xs-mbh0'>Order by preference</div>
+<input data-ui-component="place-selections" type="hidden" value="[&quot;Dallas, TX&quot;,&quot;&quot;]" name="candidates_onboarding_job_info[place_selections_names]" id="candidates_onboarding_job_info_place_selections_names" />
+<div class='react-places-chooser'>
+<div class='xs-text-center xs-4 flex flex--center'>
+<h4>Loading…</h4>
+</div>
+</div>
+</div></div>
+<div class='xs-mb2'><div class='block-label xs-none' data-ui-component='work_auth_type_field' data-field-highlight='work_auth_type_field' data-region-code='au'>
+<div class='flex flex--v-center'>
+Australian work authorization?
+<div class='xs-mlh0 tooltip tooltip--right' data-tooltip='Applicants must be currently authorized to work in Australia on a full-time basis.'>
+<i class='fa fa-question-circle text-gray'></i>
+</div>
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Are you qualified to work in Australia?</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][au][qualified]" id="candidates_onboarding_job_info_work_auths_au_qualified_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_au_qualified_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][au][qualified]" id="candidates_onboarding_job_info_work_auths_au_qualified_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_au_qualified_false">No</label>
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Will you now or in the future require sponsorship for employment visa status (e.g. Temporary Work (Skilled) visa (subclass 457))?
+</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][au][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_au_need_sponsorship_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_au_need_sponsorship_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][au][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_au_need_sponsorship_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_au_need_sponsorship_false">No</label>
+</div>
+</div>
+<div class='block-label xs-none' data-ui-component='work_auth_type_field' data-field-highlight='work_auth_type_field' data-region-code='ca'>
+<div class='flex flex--v-center'>
+Canada work authorization?
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Are you legally entitled to work in Canada?</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][ca][qualified]" id="candidates_onboarding_job_info_work_auths_ca_qualified_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_ca_qualified_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][ca][qualified]" id="candidates_onboarding_job_info_work_auths_ca_qualified_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_ca_qualified_false">No</label>
+</div>
+</div>
+<div class='block-label xs-none' data-ui-component='work_auth_type_field' data-field-highlight='work_auth_type_field' data-region-code='fr'>
+<div class='flex flex--v-center'>
+France work authorization?
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Are you eligible to work in France?</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][fr][qualified]" id="candidates_onboarding_job_info_work_auths_fr_qualified_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_fr_qualified_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][fr][qualified]" id="candidates_onboarding_job_info_work_auths_fr_qualified_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_fr_qualified_false">No</label>
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Will you now or in the future require sponsorship for employment visa status (e.g. CERFA 15186)?
+</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][fr][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_fr_need_sponsorship_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_fr_need_sponsorship_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][fr][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_fr_need_sponsorship_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_fr_need_sponsorship_false">No</label>
+</div>
+</div>
+<div class='block-label xs-none' data-ui-component='work_auth_type_field' data-field-highlight='work_auth_type_field' data-region-code='gb'>
+<div class='flex flex--v-center'>
+UK work authorization?
+<div class='xs-mlh0 tooltip tooltip--right' data-tooltip='Applicants must be currently authorised to work in the UK on a full-time basis without additional visa sponsorship.  UK citizens, Swiss Nationals and citizens of EEA countries are eligible to work in the UK without a work permit.
+'>
+<i class='fa fa-question-circle text-gray'></i>
+</div>
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Are you qualified to work in the UK?</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][gb][qualified]" id="candidates_onboarding_job_info_work_auths_gb_qualified_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_gb_qualified_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][gb][qualified]" id="candidates_onboarding_job_info_work_auths_gb_qualified_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_gb_qualified_false">No</label>
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Will you now or in the future require sponsorship for employment visa status (e.g. Tier 2 (General) Visa)?
+</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][gb][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_gb_need_sponsorship_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_gb_need_sponsorship_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][gb][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_gb_need_sponsorship_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_gb_need_sponsorship_false">No</label>
+</div>
+</div>
+<div class='block-label xs-none' data-ui-component='work_auth_type_field' data-field-highlight='work_auth_type_field' data-region-code='sg'>
+<div class='flex flex--v-center'>
+Singapore work authorization?
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Are you qualified to work in Singapore?</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][sg][qualified]" id="candidates_onboarding_job_info_work_auths_sg_qualified_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_sg_qualified_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][sg][qualified]" id="candidates_onboarding_job_info_work_auths_sg_qualified_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_sg_qualified_false">No</label>
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Will you now or in the future require sponsorship for employment visa status (e.g. an employment pass)?
+</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][sg][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_sg_need_sponsorship_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_sg_need_sponsorship_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][sg][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_sg_need_sponsorship_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_sg_need_sponsorship_false">No</label>
+</div>
+</div>
+<div class='block-label' data-ui-component='work_auth_type_field' data-field-highlight='work_auth_type_field' data-region-code='us'>
+<div class='flex flex--v-center'>
+USA work authorization?
+<div class='xs-mlh0 tooltip tooltip--right' data-tooltip='Applicants must be currently authorized to work in the United
+States on a full-time basis.
+
+In compliance with federal law, all persons hired will
+be required to verify identity and eligibility to work in the
+United States and to complete the required employment eligibility
+verification document form upon hire.
+'>
+<i class='fa fa-question-circle text-gray'></i>
+</div>
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Are you qualified to work in the US?</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][us][qualified]" id="candidates_onboarding_job_info_work_auths_us_qualified_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_us_qualified_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][us][qualified]" id="candidates_onboarding_job_info_work_auths_us_qualified_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_us_qualified_false">No</label>
+</div>
+<div class='field field--required'>
+<div class='block-label text-book xs-mbh0 xs-mth0'>Will you now or in the future require sponsorship for employment visa status (e.g. H-1B visa status)?
+</div>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][us][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_us_need_sponsorship_true" value="true" class="radio-input" />
+<label class="xs-mrh0" for="candidates_onboarding_job_info_work_auths_us_need_sponsorship_true">Yes</label>
+<input type="radio" name="candidates_onboarding_job_info[work_auths][us][need_sponsorship]" id="candidates_onboarding_job_info_work_auths_us_need_sponsorship_false" value="false" class="radio-input" />
+<label for="candidates_onboarding_job_info_work_auths_us_need_sponsorship_false">No</label>
+</div>
+</div>
+</div>
+</section>
+<hr>
+<section class='xs-text-right'>
+<button type ="submit" name="commit" class="button button button--primary" data-disable-with="Next">Next</button>
+</section>
+</form></div>
+
+
+
+</div>
+<div class='shade animated' data-ft-show-class='fadeIn' data-ft-hide-class='fadeOut'></div>
+
+
+</body>
+</html>
